@@ -1,13 +1,16 @@
-import {
-  ACTION
-} from './actions';
+import { ACTION } from './actions';
 
 const initialState = {
 
 };
 
 const reducer = (state = initialState, action) => {
-  return state;
-}
+  switch (action.type) {
+    case ACTION:
+      return state;
+    default:
+      return state;
+  }
+};
 
 export default reducer;
